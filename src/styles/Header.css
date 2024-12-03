@@ -1,0 +1,16 @@
+.app-header {
+  background: linear-gradient(90deg, #a20b35 11.05%, #002b49 98.59%);
+  color: white;
+  padding: 10px 20px;
+  width: auto; /* Full width */
+  height: auto;
+
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+}

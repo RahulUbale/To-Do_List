@@ -1,0 +1,22 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height */
+}
+
+.app-body {
+  display: flex; /* Change from grid to flex to avoid overlap */
+  height: calc(100vh - 60px); /* Adjust based on header height */
+}
+
+.footer {
+  background: linear-gradient(135deg, #002b5c, #1a3c63);
+  color: white;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Ensures proper positioning */
+  bottom: 0; /* Sticks the footer to the bottom */
+ 
+}

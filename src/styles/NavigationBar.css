@@ -1,0 +1,71 @@
+/* NavigationBar.css */
+.navigation-bar {
+  left: 0;
+  top: 0;
+  height: auto; 
+  width: 150px; /* Set a fixed width */
+  border-bottom: 1px solid rgb(var(195,209,221));
+  background: linear-gradient(135deg, #e0e0e0, #f5f5f5); /* Shining effect with gradient */
+  border-right: 1px solid #ccc; /* Right border */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center the buttons */
+  padding: 10px; 
+  transition: width 0.3s; /* Smooth transition for width change */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.navigation-bar.minimized {
+  width: 50px; /* Reduced width when minimized */
+}
+
+.navigation-bar button {
+  padding: 10px 15px; /* Button padding */
+  background: linear-gradient(135deg,#05466c,  #03314d); /* Shining effect with gradient */
+  color: white; /* Text color */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 5px 0; 
+  width: 100%; 
+  border-radius: 4px; 
+  transition: background 0.3s, transform 0.3s; /* Smooth transition for effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for buttons */
+}
+
+.navigation-bar button:hover {
+  background: linear-gradient(90deg, #a20b35 11.05%, #002b49 98.59%); /* Darker gradient on hover */
+  transform: scale(1.03); /* Slightly scale up on hover for effect */
+}
+
+/* Emojis displayed when minimized */
+.emoji-menu {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack emojis vertically */
+  align-items: center; /* Center items */
+}
+
+/* Full menu when expanded */
+.full-menu {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navigation-bar {
+      width: 100%; /* Full width for mobile */
+      height: auto; /* Allow height to adjust */
+      position: relative; /* Change position for mobile */
+  }
+  
+  .navigation-bar button {
+      padding: 8px; /* Smaller padding for mobile */
+  }
+  
+  .emoji-menu,
+  .full-menu {
+      flex-direction: column; /* Arrange items in a row on mobile */
+      justify-content: center; /* Center items */
+  }
+}
